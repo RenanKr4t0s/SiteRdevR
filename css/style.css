@@ -1,0 +1,182 @@
+/*==========O QUE FALTA FAZER==========*/
+/*
+    Esse site foi desenvolvido para desktop, o que quebra algumas alturas no mobile
+    - Fazer o site com mobile first
+    - criar o Footer com botões bonitinhos (tipo os da Alura)
+
+    ====MAIS PRO FUTURO===
+
+    -Criar um Header que leve a outras páginas
+    -Deixar um tipo de apresentação do meu portfólio
+*/
+
+:root{
+    --light-color: #FCFCFC;
+    --mid-light-color: #0FC9E7;
+    --mid-dark-color:#3186B2;
+    --dark-color: #4756CA;
+    --font-fancy: 'Kdam Thmor Pro', sans-serif;
+    --font-basics: 'Quicksand', sans-serif;
+
+}
+/*=============TAGS HTML=============*/
+body{
+    font-family: var(--font-basics);
+    text-align: center;
+    color: var(--dark-color);
+    padding: 2rem 0;
+    background-color: var(--light-color);
+}
+h1{
+    font-size: 4rem;
+    font-family: var(--font-fancy);
+    padding: 2rem 0;
+    width: 14rem;
+    margin: 0 auto;
+}
+h2{
+    font-size: 2.5rem;
+    font-family: var(--font-fancy);
+    line-height: 3rem;
+    padding: 1rem;
+    width: 12rem;
+    margin: 0 auto;
+}
+h3{
+    font-size: 1.5rem;
+    font-family: var(--font-fancy);
+    line-height: 2.5rem;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+}
+p{
+    font-size: 18px;
+    font-family: var(--font-basics);
+    font-weight: 600;
+    padding: .5rem;
+}
+hr{
+    display: none;
+}
+/*=============CLASSES CSS=============*/
+
+.topo{
+    background-color: var(--light-color);
+    position: relative;
+    height: 90vh;
+}
+.marca{
+    font-size: 2rem;
+    color: var(--light-color);
+    text-shadow:var(--dark-color) 2px 0 10px ;
+}
+.topo__notebook-man{
+    width: 20rem;
+    max-height: 30vh;
+    position: relative;
+    top: 0;
+    z-index: 1;
+}
+.profile{
+    text-align: center;
+    justify-content: center;
+    padding: 3rem 0;
+    color: var(--light-color);
+    background-color: var(--mid-dark-color);
+    height: 70vh;
+}
+.minha-foto{
+    width: 10rem;
+    z-index: 5;
+    margin-top: 2rem;
+}
+.paragrafo{
+    font-weight: 400;
+    text-align: left;
+    line-height: 2rem;
+}
+.skills__child{
+    width: 90vw;
+    padding: 1em;
+    margin: 2em 0;
+}
+.skills__imagem-people{
+    width:18rem;
+    margin-right: 1rem;
+}
+.skills__imagem-cell{
+    width:15rem;
+    border-radius: 3rem;
+    margin-left: 1rem;
+}
+.contacte-me{
+    height: 0vh;
+}
+.contacte-me__subtitle{
+    text-align: center;
+}
+
+.buttonClass{
+  margin: 2rem 1rem ;
+  display: inline-block;
+  width:10rem;
+  height:1rem;
+  padding: .5rem 0;
+  border-width:1px;
+  color:var(--light-color);
+  border-color:var(--mid-dark-color);
+  font-weight:bold;
+  border-radius: 1rem;
+  box-shadow: 0px 10px 14px -7px #276873;
+  text-shadow: 0px 1px 0px #3d768a;
+  background:linear-gradient(var(--mid-dark-color), var(--dark-color));
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#408c99, #599bb3);
+}
+
+lg-btn{
+    height: 2rem;
+    width: 5rem;
+}
+
+@media screen and (min-width: 800px) {
+    hr{
+        border: none;
+        display: inline-block;
+        border-top: dotted var(--mid-light-color);
+        border-top-width: 0.7rem;
+        width: 7rem;
+        padding: 2rem 0;
+    }
+    .topo__notebook-man{
+        max-height: 100vh;
+        position: relative;
+        top: 0;
+        z-index: 1;
+    }
+    .skills__child{
+        width: 90vw;
+        height: 32vh;
+        padding: 1em;
+        margin: 2em 0;
+    }
+    .skills__imagem-people{
+        width:18rem;
+        float: left;
+        margin-right: 1rem;
+    }
+    .skills__imagem-cell{
+        width:15rem;
+        float: inline-end;
+        border-radius: 3rem;
+        margin-left: 1rem;
+    }
+    .contacte-me{
+        height: 50vh;
+    }
+    
+}
+              
